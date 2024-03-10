@@ -22,6 +22,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.link {
+  font-size: 32px;
+  margin: 20px;
+}
+
 .feedback-form {
   display: flex;
   padding: 24px;
