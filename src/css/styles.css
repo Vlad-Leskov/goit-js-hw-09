@@ -5,8 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -15,11 +13,117 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(230, 230, 230);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.feedback-form {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #fff;
+  width: 408px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-input {
+  display: flex;
+  width: 360px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+}
+
+.button:hover {
+  background: #6c8cff;
+  transition: background-color 250ms ease-in-out;
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+.gallery {
+  display: flex;
+  width: 1440px;
+  height: 696px;
+  padding: 24px 156px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+}
+
+.gallery-image {
+  display: flex;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-image:hover {
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+a:hover {
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+.sl-close:hover {
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+.sl-prev:hover {
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+.sl-next:hover {
+  cursor: url('../img/bxs-hand-down.svg'), auto;
+}
+
+.sl-caption {
+  transition: opacity 250ms ease-in-out;
 }
