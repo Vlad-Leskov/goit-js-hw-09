@@ -78,7 +78,6 @@ const galleryItems = images
           class="gallery-image"
           src="${preview}"
           alt="${description}"
-          title="${description}"
         />
       </a>
     </li>
@@ -88,4 +87,7 @@ const galleryItems = images
 
 gallery.insertAdjacentHTML('beforeend', galleryItems);
 
-new SimpleLightbox('.gallery a');
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});

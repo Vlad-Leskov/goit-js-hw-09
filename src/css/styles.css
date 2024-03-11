@@ -128,7 +128,3 @@ a:hover {
 .sl-next:hover {
   cursor: url('../img/bxs-hand-down.svg'), auto;
 }
-
-.sl-caption {
-  transition: opacity 250ms ease-in-out;
-}
